@@ -4,4 +4,4 @@
 diskover.json
 
 # Constants configuation file.
-/src/diskover/Constants.php
+#/src/diskover/Constants.php
