@@ -10,6 +10,6 @@ RUN docker-php-ext-install ldap
 RUN cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
 
 # Copy existing application directory contents
-COPY ./diskover-web /var/www
+COPY . /var/www
 
 EXPOSE 8000

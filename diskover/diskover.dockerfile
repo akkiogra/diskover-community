@@ -10,7 +10,7 @@ RUN apk update \
   ncurses
 
 # Copy existing application directory contents
-COPY ./diskover /app/diskover
+COPY . /app/diskover
 
 WORKDIR /app/diskover
 
