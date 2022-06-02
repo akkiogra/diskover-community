@@ -25,9 +25,9 @@ services:
       context: ./diskover
       dockerfile: diskover.dockerfile
     working_dir: /app/diskover
-    environment:
+    #environment:
       # diskoverd task worker (Essential + versions only)
-      - DISKOVERD_WORKERNAME=docker-worker
+      #- DISKOVERD_WORKERNAME=docker-worker
     volumes:
       - ./diskover:/app/diskover
       # diskover config files
