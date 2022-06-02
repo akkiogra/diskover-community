@@ -95,5 +95,5 @@ class Constants {
     const NEWINDEX_CHECKTIME = 10;
 
     // sqlite database file path
-    const DATABASE = '../../db/diskoverdb.sqlite3';
+    const DATABASE = '../db/diskoverdb.sqlite3';
 }
