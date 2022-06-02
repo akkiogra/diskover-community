@@ -63,10 +63,12 @@ services:
       traefik.frontend.headers.contentTypeNosniff: 'true'
       traefik.frontend.headers.customResponseHeaders: 'X-Robots-Tag:noindex,nofollow,nosnippet,noarchive,notranslate,noimageindex'
       traefik.frontend.headers.forceSTSHeader: 'true'
-    networks:
-      - plexguide
     volumes:
       - ./diskover-web/diskover-web.conf:/etc/nginx/conf.d/diskover-web.conf
       - ./diskover-web:/var/www
     ports:
       - 8000:8000
+networks:
+  default:
+    name: plexguide
+    external: true
