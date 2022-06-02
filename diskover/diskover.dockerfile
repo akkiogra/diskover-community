@@ -18,4 +18,4 @@ WORKDIR /app/diskover
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Start diskoverd task woker (Essential + versions only)
-CMD ["python3", "diskoverd.py", "-v"]
+#CMD ["python3", "diskoverd.py", "-v"]
