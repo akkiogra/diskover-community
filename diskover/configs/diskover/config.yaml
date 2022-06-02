@@ -99,7 +99,7 @@ databases:
         # set host to your Elasticsearch hostname or IP
         # if using AWS ES, set to your AWS ES endpoint name without http:// or https://
         # override with env var ES_HOST
-        host: localhost
+        host: elasticsearch
         # set port to your ES port, default is 9200 for local and 443 or 80 for AWS ES
         # override with env var ES_PORT
         port: 9200
