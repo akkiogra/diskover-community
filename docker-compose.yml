@@ -27,7 +27,7 @@ services:
     working_dir: /app/diskover
     environment:
       # diskoverd task worker (Essential + versions only)
-      -  DISKOVERD_WORKERNAME=docker-worker
+      - DISKOVERD_WORKERNAME=docker-worker
     volumes:
       - ./diskover:/app/diskover
       # diskover config files
@@ -70,5 +70,5 @@ services:
       - 8000:8000
 networks:
   default:
-    name: plexguide
-    external: true
+    external:
+      name: plexguide
